@@ -11,7 +11,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+button {
     color: white;
     font-family: "Ubuntu", serif;
 }
@@ -76,9 +77,9 @@ header {
 
 }
 
-.profile-ctn {
-    height: 2.5rem;
-    width: 2.5rem;
+.account-ctn .profile-ctn {
+    height: 2rem;
+    width: 2rem;
     overflow: hidden;
     border-radius: 2rem;
     margin-left: 1.5rem;
@@ -86,7 +87,7 @@ header {
 
 .account-ctn img {
     width: auto;
-    height: 2.5rem;
+    height: 2rem;
     
 }
 
@@ -94,6 +95,61 @@ header {
     color: black;
     margin-left: 1.5rem;
     font-size: 1.25rem;
+}
+
+.greeting-ctn {
+    display: flex;
+    align-items: center;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.greeting-ctn .profile-ctn {
+    height: 4rem;
+    width: 4rem;
+    overflow: hidden;
+    border-radius: 3rem;
+
+}
+
+.greeting-ctn img {
+    width: auto;
+    height: 4rem;
+}
+
+.greeting-ctn h3 {
+    color: black;
+    font-size: 1rem;
+}
+
+.greeting-ctn h1 {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.text-ctn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.buttons-ctn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.buttons-ctn button {
+    background-color: #2e5eaa;
+    border: 0;
+    border-radius: 2rem;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1rem;
+
 }
 
 
